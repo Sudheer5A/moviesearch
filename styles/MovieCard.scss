@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.movieCard {
+  height: 25rem;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(255, 87, 87, 0.1);
+  transition: transform 0.3s ease;
+  img {
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    height: 65%;
+    width: 100%;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.movieCard__textarea {
+  margin: 10px;
+  height: 30%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  h1 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.movieCard__textarea-rating {
+  background: red;
+  border-radius: 5px;
+  padding-left: 5px;
+  color: #ffffff;
+  font-size: 0.8rem;
+}

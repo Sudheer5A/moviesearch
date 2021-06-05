@@ -1,0 +1,62 @@
+.movie {
+  background-color: black;
+  color: #ffffff;
+}
+h1 {
+  margin-left: 30px;
+  margin-top: 5rem;
+}
+
+.banner {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.banner__info {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.banner__info-overview {
+  opacity: 0.8;
+  width: 80%;
+}
+.popularbox {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.popular {
+  width: max-content;
+  display: flex;
+}
+
+.topratedbox {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.toprated {
+  width: max-content;
+  display: flex;
+}
+.movie__section {
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
