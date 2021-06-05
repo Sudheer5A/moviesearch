@@ -27,9 +27,11 @@
 .movieCard img {
   padding: 10px;
   border-radius: 30px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 20px rgba(255, 65, 65, 0.1);
+          box-shadow: 0 10px 20px rgba(255, 65, 65, 0.1);
   height: 65%;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
 
@@ -53,8 +55,8 @@
 
 @media only screen and (max-width: 400px) {
   .movieCard {
-    height: 14rem;
-    width: 7rem;
+    height: 17rem;
+    width: 9rem;
     margin: 10px;
   }
 }
@@ -81,7 +83,7 @@
 
 @media only screen and (max-width: 400px) {
   .movieCard__textarea h1 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -91,7 +93,13 @@
 
 @media only screen and (max-width: 400px) {
   .movieCard__textarea p {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .movieCard__textarea {
+    height: 40%;
   }
 }
 
