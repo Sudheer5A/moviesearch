@@ -8,6 +8,12 @@ h1 {
   margin-top: 5rem;
 }
 
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .banner {
   height: 60vh;
   display: -webkit-box;
@@ -46,7 +52,7 @@ h1 {
 
 @media only screen and (max-width: 400px) {
   .banner__info h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
