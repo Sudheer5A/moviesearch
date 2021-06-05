@@ -19,6 +19,9 @@ h1 {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    height: 60%;
+  }
   h1 {
     font-size: 3rem;
   }
@@ -27,6 +30,11 @@ h1 {
 .banner__info-overview {
   opacity: 0.8;
   width: 80%;
+  overflow: scroll;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.8rem;
+    height: 4rem;
+  }
 }
 .popularbox {
   overflow-y: hidden;

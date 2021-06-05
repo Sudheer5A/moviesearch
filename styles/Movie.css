@@ -34,6 +34,12 @@ h1 {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 768px) {
+  .banner__info {
+    height: 60%;
+  }
+}
+
 .banner__info h1 {
   font-size: 3rem;
 }
@@ -41,6 +47,14 @@ h1 {
 .banner__info-overview {
   opacity: 0.8;
   width: 80%;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner__info-overview {
+    font-size: 0.8rem;
+    height: 4rem;
+  }
 }
 
 .popularbox {

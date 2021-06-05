@@ -33,9 +33,30 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 400px) {
+  .movieCard img {
+    border-radius: 15px;
+  }
+}
+
 .movieCard:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .movieCard {
+    height: 17rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .movieCard {
+    height: 14rem;
+    width: 7rem;
+    margin: 10px;
+  }
 }
 
 .movieCard__textarea {
@@ -58,8 +79,20 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 400px) {
+  .movieCard__textarea h1 {
+    font-size: 0.7rem;
+  }
+}
+
 .movieCard__textarea p {
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .movieCard__textarea p {
+    font-size: 0.4rem;
+  }
 }
 
 .movieCard__textarea-rating {

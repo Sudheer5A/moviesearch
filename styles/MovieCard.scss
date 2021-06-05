@@ -19,9 +19,21 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     height: 65%;
     width: 100%;
+    @media only screen and (max-width: 400px) {
+      border-radius: 15px;
+    }
   }
   &:hover {
     transform: scale(1.05);
+  }
+  @media only screen and (max-width: 768px) {
+    height: 17rem;
+    width: 10rem;
+  }
+  @media only screen and (max-width: 400px) {
+    height: 14rem;
+    width: 7rem;
+    margin: 10px;
   }
 }
 
@@ -35,9 +47,15 @@
   h1 {
     font-size: 1.1rem;
     margin: 0;
+    @media only screen and (max-width: 400px) {
+      font-size: 0.7rem;
+    }
   }
   p {
     font-size: 0.8rem;
+    @media only screen and (max-width: 400px) {
+      font-size: 0.4rem;
+    }
   }
 }
 
