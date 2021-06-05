@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard";
 import { AiFillStar } from "react-icons/ai";
 
 function Movie() {
-  const API_KEY = "a0b2840829d3ffe238edad99b44e97d4";
+  const API_KEY = /* YOUR API KEY */ ;
   const [movies, setMovies] = useState([]);
   const [popular, setPopular] = useState([]);
   const [toprated, setTopRated] = useState([]);
@@ -39,8 +39,7 @@ function Movie() {
         setTopRated(data.results);
       });
   };
-  //https://api.themoviedb.org/3/movie/latest?api_key=<<api_key>>&language=en-US
-  // https://api.themoviedb.org/3/movie/now_playing?api_key=<<api_key>>&language=en-US&page=1
+ 
   useEffect(() => {
     getMovieData();
     getPopularData();
