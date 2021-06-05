@@ -15,7 +15,6 @@ function Movie() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setBanner(
           data.results[Math.floor(Math.random() * data.results.length - 1)]
         );
@@ -47,8 +46,6 @@ function Movie() {
     getPopularData();
     getNowplayingData();
   }, []);
-
-  console.log(banner);
 
   return (
     <div className="movie">
